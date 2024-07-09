@@ -1,0 +1,10 @@
+[[target]]
+name = "yilinx"
+description = "Generate bitstreams for Yilinx FPGAs"
+command = "python"
+fileset.pinout = "*.ydc"
+args = ["yilinx.py"]
+
+
+[build]
+default-target = "yilinx"

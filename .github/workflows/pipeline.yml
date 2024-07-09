@@ -1,0 +1,28 @@
+name: Pipeline
+on:
+  push:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch repository
+        uses: actions/checkout@v4
+
+      - name: Setup Orbit
+        uses: cdotrus/setup-orbit@v0
+
+      - name: Log all tool versions
+        run: |
+          orbit --version  
+          python --version
+        
+      - name: Build or_gate
+        run: orbit build --target yilinx --top or_gate -- --sram
+
+      - name: Save Bitream
+        uses: actions/upload-artifact@v4
+        with:
+          name: OrGate
+          path: |
+            target/yilinx/or_gate.bit
