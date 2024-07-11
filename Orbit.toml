@@ -1,7 +1,7 @@
 [ip]
 name = "gates"
-version = "1.0.0"
-source = "https://github.com/hyperspace-labs/gates/archive/1.0.0.zip"
+version = "1.0.1"
+source = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
 
 # See more keys and their definitions at https://cdotrus.github.io/orbit/reference/manifest.html
 
