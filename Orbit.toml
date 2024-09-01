@@ -1,8 +1,9 @@
 [ip]
 name = "gates"
+uuid = "agduyk4nls7aw0tdc5946fzde"
 version = "1.0.1"
 source = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
 
-# See more keys and their definitions at https://cdotrus.github.io/orbit/reference/manifest.html
+# See more keys and their definitions at https://chaseruskin.github.io/orbit/reference/manifest.html
 
 [dependencies]

@@ -6,8 +6,8 @@ PROG_FLASH = bool(sys.argv.count('--flash') > 0)
 
 # Get environment variables set by orbit for this particular build
 BLUEPRINT = os.environ.get("ORBIT_BLUEPRINT")
-OUTPUT_PATH = os.environ.get("ORBIT_OUTPUT_PATH")
-TOP_LEVEL = os.environ.get("ORBIT_TOP")
+OUTPUT_PATH = os.environ.get("ORBIT_OUT_DIR")
+TOP_LEVEL = os.environ.get("ORBIT_TOP_NAME")
 
 synth_order = []
 constraints_file = None
