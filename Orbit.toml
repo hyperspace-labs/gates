@@ -1,8 +1,9 @@
 [ip]
 name = "gates"
-version = "1.0.2"
+version = "1.0.3"
 uuid = "agduyk4nls7aw0tdc5946fzde"
-source = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
+source = { url = "https://github.com/hyperspace-labs/gates.git", protocol = "gitit" }
+# source = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
 channels = ["hyperspace-labs"]
 public = ["rtl"]
 

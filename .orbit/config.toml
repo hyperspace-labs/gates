@@ -8,3 +8,10 @@ args = ["yilinx.py"]
 
 [build]
 default-target = "yilinx"
+
+
+[[protocol]]
+name = "gitit"
+description = "Download ip using git"
+command = "git"
+args = ["clone", "{{ orbit.ip.source.url }}"]

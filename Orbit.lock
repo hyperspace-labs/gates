@@ -4,7 +4,8 @@ version = 1
 
 [[ip]]
 name = "gates"
-version = "1.0.2"
+version = "1.0.3"
 uuid = "agduyk4nls7aw0tdc5946fzde"
-url = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
+url = "https://github.com/hyperspace-labs/gates.git"
+protocol = "gitit"
 dependencies = []
