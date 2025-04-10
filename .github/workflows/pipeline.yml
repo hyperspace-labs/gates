@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Orbit
-        uses: cdotrus/setup-orbit@v0
+        uses: chaseruskin/setup-orbit@v0
 
       - name: Log all tool versions
         run: |
