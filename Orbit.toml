@@ -1,6 +1,6 @@
 [ip]
 name = "gates"
-version = "1.0.1"
+version = "1.0.2"
 uuid = "agduyk4nls7aw0tdc5946fzde"
 source = "https://github.com/hyperspace-labs/gates/archive/{{orbit.ip.version}}.zip"
 channels = ["hyperspace-labs"]
