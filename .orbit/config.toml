@@ -6,12 +6,16 @@ fileset.pinout = "*.ydc"
 args = ["yilinx.py"]
 
 
-[build]
-default-target = "yilinx"
-
-
 [[protocol]]
 name = "gitit"
 description = "Download ip using git"
+patterns = ["*.git"]
 command = "git"
-args = ["clone", "{{ orbit.ip.source.url }}"]
+args = ["clone", "{{ orbit.ip.source }}"]
+
+
+[build]
+default-target = "yilinx"
+
+[install]
+default-protocol = "gitit"
