@@ -17,5 +17,8 @@ args = ["clone", "{{ orbit.ip.source }}"]
 [build]
 default-target = "yilinx"
 
+[publish]
+default-channels = ["hyperspace-labs"]
+
 [install]
 default-protocol = "gitit"
