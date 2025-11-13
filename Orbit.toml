@@ -1,8 +1,8 @@
-[ip]
+[project]
 name = "gates"
-version = "1.0.3"
+version = "2.0.0"
 uuid = "agduyk4nls7aw0tdc5946fzde"
-source = "https://github.com/hyperspace-labs/gates.git"
+repository = "https://github.com/hyperspace-labs/gates.git"
 public = ["rtl"]
 
 [dependencies]

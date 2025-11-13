@@ -15,7 +15,7 @@ jobs:
       - name: Log all tool versions
         run: |
           orbit --version  
-          python --version
+          python3 --version
         
       - name: Build or_gate
         run: orbit build --target yilinx --top or_gate -- --sram
@@ -23,6 +23,5 @@ jobs:
       - name: Save Bitream
         uses: actions/upload-artifact@v4
         with:
-          name: OrGate
           path: |
             target/yilinx/or_gate.bit

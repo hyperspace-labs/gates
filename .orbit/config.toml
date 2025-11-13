@@ -1,24 +1,15 @@
 [[target]]
 name = "yilinx"
 description = "Generate bitstreams for Yilinx FPGAs"
-command = "python"
+command = ["python3", "yilinx.py"]
 fileset.pinout = "*.ydc"
-args = ["yilinx.py"]
 
-
-[[protocol]]
-name = "gitit"
-description = "Download ip using git"
-patterns = ["*.git"]
-command = "git"
-args = ["clone", "{{ orbit.ip.source }}"]
-
+[[target]]
+name = "ninja"
+command = ["python3", "ninja.py"]
 
 [build]
 default-target = "yilinx"
 
 [publish]
-default-channels = ["hyperspace-labs"]
-
-[install]
-default-protocol = "gitit"
+default-channels = ["huron"]
